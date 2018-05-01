@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HeaderBar from './components/headerBar';
+import BodyContainer from './components/bodyContainer';
 import './style/index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
@@ -42,6 +43,8 @@ class Index extends React.Component {
 					handleClickAbout={this.handleClickAbout}
 					handleClickEdu={this.handleClickEdu}
 					handleClickPhoto={this.handleClickPhoto} />
+				<BodyContainer 
+					currentPage={this.state.page} />
 			</div>
 		);
 	}

@@ -7,7 +7,7 @@ class HeaderBar extends React.Component {
 	render() {
 		return (
 			<div>
-				<img className='header-bg' src='/assets/headerbg.jpg' />
+				<img className='header-bg' src={require('../assets/headerbg.jpg')} />
 				<Grid>
 					<Row className='header-row'>
 						<Col className='header-info' lg={4}>
